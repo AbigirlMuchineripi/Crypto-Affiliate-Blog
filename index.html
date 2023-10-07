@@ -3,58 +3,190 @@
 <html>
 <head>
     <title>My Website</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     
-   
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+          body{height: 3000px;}
+        .home{ background-color: rgb(245, 245, 188); transition: all 2s;}
+        .learn{background-color: rgb(193, 102, 253); transition: all 2s;}
+        .crypto{background-color: rgb(248, 164, 133); transition: all 2s;} 
+        .invest{background-color: rgb(121, 166, 250); transition: all 2s;}        
+        .blockchains{background-color: rgb(247, 157, 250); transition: all 2s;}
+        .news{background-color: rgb(158, 247, 140); transition: all 2s;}
+    </style>   
 </head>   
 <body>
     <header id="main-header">
         <div class="container">
-        <h1>Abigirl Muchineripi</h1>
-        <h3>The F!nTech Blogger</h3>
+            <div id="particles-js"></div> 
+        <h1 class="header-title">Crypto Crunchh</h1>
+        <h3> The Crypto World</h3>       
+          
         </div>
     </header>
 
     <nav id="navbar">
         <div class="container">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>                
-                <li><a href="#">Crypto Prices</a></li>
-                <li><a href="#">FinTech News</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        
+            <ul >
+                <li class="hover-1"><a href="#Home">Home</a></li>
+                <li class="hover-2"><a href="#Learn">Learn</a></li>                             
+                <li class="hover-3"><a href="#Crypto">Crypto </a></li>
+                <li class="hover-2"><a href="#Invest">Invest</a></li>  
+                <li class="hover-5"><a href="#Blockchains">Blockchains</a></li>
+                <li class="hover-4"><a href="#News"> News</a></li>                
+                
+            </ul>        
         </div>
     </nav>
-
     <section id="showcase">
         <div class="container">
-            <h1>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil praesentium eos labore, officiis ipsa deleniti veniam optio voluptate temporibus natus culpa repudiandae velit nulla suscipit laudantium. Commodi fugiat quidem odit.
-                
+            <script src="https://public.bnbstatic.com/unpkg/growth-widget/cryptoCurrencyWidget@0.0.9.min.js" ></script>
+            <div class="binance-widget-marquee" data-cmc-ids="1,1027,1839,3408,52,74,5426,3890,5805,7083" data-theme="light" data-transparent="false" data-locale="en" data-powered-by="Powered by" data-disclaimer="Disclaimer" ></div>
+            <h1 class="showcase-msg">Think ahead and invest in decentralized assets.
             </h1>
-
         </div>
     </section>
 <div class="container">
     <section id="main">
-        <h1>Welcome</h1>
+        <h1 id="Home">Home</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cum provident amet officiis labore? Doloremque illum nisi possimus molestias.</p>
+     
+        <aside id="sidebar">            
+                <form id="form" action="">
+                    <input 
+                    name="email"
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                    />            
+                </form>
+                <button>Subscribe.</button>             
+        </aside>
+        <br>
+    </section>    
+    
+</div>
+<div class="container">
+    <section id="main">
+        <h1 id="Learn">Learn</h1>
+        <div class="product">
+          <div class="level">NFT Course</div>
+          <p>Free</p>            
+          <button class="btn">SELECT</button>
+        </div>
+        <div class="product">
+          <div class="level">Crypto Trading 101</div>
+          <p>Free</p>            
+          <button class="btn">SELECT</button>
+        </div>
+        <div class="product">
+          <div class="level">Blockchain Technology</div>
+          <p>Free</p>          
+          <button class="btn">SELECT</button>
+        </div>
+        <div class="product">
+          <div class="level">MetaMask</div>
+          <p>Free</p>          
+          <button class="btn">SELECT</button>
+        </div>
+    </section>   
+
+</div>
+<div class="container">
+    <section id="main">
+        <h1 id="Crypto">Crypto</h1>
+        <p class="crypto-msg">
+          A digital or virtual money that uses cryptography for security is referred to as a cryptocurrency, 
+          or simply "crypto." All transactions are recorded on a blockchain,
+          which is a decentralized public ledger that is operated without the involvement of a central bank or a government.
+          In 2009, one of the most well-known cryptocurrencies called Bitcoinn was invented. However, thousands of additional 
+          cryptocurrencies are now accessible, each with distinct qualities and advantages. Due to great potential profits and 
+          their decentralized structure, cryptocurrencies have attracted a 
+          lot of attention recently. Others see them as a means of avoiding governmental control over their funds, while some 
+          see it as a chance to diversify their investment portfolio.
+          <br>
+          <br>
+          However, it is crucial to keep in mind that cryptocurrency asset classes are still somewhat new and volatile. 
+          Like any investment, there are risks involved in investing in them, so before making a decision, do your research 
+          and weigh the advantages and disadvantages. To assist you get started in investing in crypto, this course has detailed information.
+         </p>
+    </section>
+
+</div>
+<div class="container">
+    <section id="main">
+        <h1 id="Invest">Invest</h1>
+        <p class="crypto-msg">
+            Bitcoin, the biggest and best-known cryptocurrency, is one well-liked cryptocurrency to invest in. 
+            Bitcoin has a track record and has been in existence for more than ten years.
+            
+<br>
+            Ethereum, the second-largest cryptocurrency by market capitalization, is another well-liked cryptocurrency to invest in.
+            Ethereum is frequently used as a platform for decentralized apps (dApps), and it has a lot of potential for growth and development.
+<br>
+            Consider investing in Ripple (XRP), Litecoin (LTC), Cardano (ADA), and Binance Coin (BNB), among other cryptocurrencies.
+            These cryptocurrencies have also demonstrated growth and development potential, making them viable additions to your investment portfolio.
+        </p>
+    </section>
+</div>
+<div class="container">
+    <section id="main">
+        <h1 id="Blockchains">Blockchains</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cum provident amet officiis labore? Doloremque illum nisi possimus molestias.</p>
 
     </section>
-    
-    <aside id="sidebar">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-    </aside>
 </div>
+<div class="container">
+    <section id="main">
+        <h1 id="News">News</h1>
+        <h4 id="typeWriter" class="news-msg"><strong></strong>
+       
+       </h4>
+    </section>   
+
+</div>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="app.js"></script>
+<script>
+    var pageTop;
+    var bodyTag = document.querySelector('body');
+
+    window.addEventListener('scroll', function(){
+        
+        pageTop =  window.pageYOffset;
+
+        switch(true){
+            case pageTop < 600: bodyTag.className="home";  break;
+            case pageTop < 1200: bodyTag.className="learn";  break;
+            case pageTop < 1800: bodyTag.className="crypto";  break;
+            case pageTop < 2400: bodyTag.className="invest";  break;
+            case pageTop < 3000: bodyTag.className="blockchains";  break;
+            case pageTop < 3600: bodyTag.className="news";  break;            
+            default: bodyTag.className="";
+        }
+    })
+</script>
+<script>
+    var i = 0;
+var txt = 'Stay Informed. Stay Ahead. Follow Updates.'; /* The text */
+var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typeWriter").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+// Call the typewriter function when the page loads
+window.onload = typeWriter;
+</script>
 
 <footer id="main-footer">
-    <p>Copyright © 2023 Abigirl Muchineripi</p>
+    <p>Copyright © 2023 Crypto Crunchh</p>
 
 </footer>
-
 
 </body>
 </html>
